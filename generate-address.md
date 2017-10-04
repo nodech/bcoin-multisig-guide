@@ -2,7 +2,7 @@
 In following code, we'll import all necessary libraries, generate private and public keys, and create
 multisig address.
 
-[./generate-address.js]
+[generate-address.js](./generate-address.js)
 
 ```js
 const ring1 = KeyRing.generate(compressed, network);
