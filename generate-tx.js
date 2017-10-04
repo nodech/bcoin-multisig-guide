@@ -70,6 +70,11 @@ const spend1 = new MTX();
 ring1.script = redeem;
 
 spend1.addCoin(coin);
+
+// scriptInput will assemble script from
+// redeem script and script, which will
+// assemble redeem and create
+// space for signatures in the script.
 spend1.scriptInput(0, coin, ring1);
 
 // send
@@ -115,5 +120,4 @@ spend2.signInput(0, coin, ring2);
 // Let's make sure that the transaction is valid
 assert(spend2.verify(), 'Transaction isnt valid.');
 
-console.log('');
 console.log(spend2.toRaw().toString('hex'));
