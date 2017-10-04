@@ -17,7 +17,8 @@ applications on [wiki][multisig-apps].
 #### Definition
 Multisig transactions have `m-of-n` form, where `m` stands for number of signatures required to spend funds and `n` stands
 for maximum number of pubkeys that are permitted to sign (`m <= n`). You can check the motivation
-and specification in [BIP11][]. We'll also be using [Pay to Script Hash(P2SH)][BIP16] format for script and [Its address format][BIP13] for our addresses and for receiving the transactions.
+and specification in [BIP11][]. We'll also be using [Pay to Script Hash(P2SH)][BIP16] format for script
+and [Its address format][BIP13] for our addresses and for receiving the transactions.
 
 #### Address Creation
 When you want to create multisig address, first you need to aggree on numbers in `m-of-n`. If someone chooses
