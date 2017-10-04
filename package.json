@@ -1,0 +1,22 @@
+{
+  "name": "bcoin-multisig-guide",
+  "version": "1.0.0",
+  "description": "Bcoin Multisig Guide",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodar-chkuaselidze/bcoin-multisig-guide.git"
+  },
+  "author": "Nodari Chkuaselidze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodar-chkuaselidze/bcoin-multisig-guide/issues"
+  },
+  "homepage": "https://github.com/nodar-chkuaselidze/bcoin-multisig-guide#readme",
+  "dependencies": {
+    "bcoin": "^1.0.0-beta.15"
+  }
+}
