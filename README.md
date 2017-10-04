@@ -43,3 +43,9 @@ transaction with outputs you provided.
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP13]: https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki
 [multisig-apps]: https://en.bitcoin.it/wiki/Multisignature#Multisignature_Applications
+
+### Manual construction
+
+In this setup, we won't be running node, looking into blockchain or wallet functionality. This is slightly more abstract
+then constructing scripts by ourselves.  
+We'll split code in multiple files and share keys using current directory (So you can use fresh dir).
