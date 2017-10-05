@@ -69,6 +69,22 @@ const spend1 = new MTX();
 // signing transaction
 ring1.script = redeem;
 
+// send
+spend1.addOutput({
+  address: sendTo,
+  value: Amount.fromBTC('50').toValue()
+});
+
+// Check the guide
+// send change to ourselves 
+spend1.addOutput({
+  address: changeAddr,
+  value: Amount.fromBTC('49.99').toValue()
+});
+
+// We can manually add this coin
+// and this will also add input
+// to our transaction
 spend1.addCoin(coin);
 
 // scriptInput will assemble script from
@@ -76,18 +92,6 @@ spend1.addCoin(coin);
 // assemble redeem and create
 // space for signatures in the script.
 spend1.scriptInput(0, coin, ring1);
-
-// send
-spend1.addOutput({
-  address: sendTo,
-  value: Amount.fromBTC('50').toValue()
-});
-
-// send change to ourselves 
-spend1.addOutput({
-  address: changeAddr,
-  value: Amount.fromBTC('48.99').toValue()
-});
 
 // all info is here, all is left is to sign
 // First signs first one and sends signed tx
