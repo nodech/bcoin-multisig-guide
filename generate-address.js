@@ -2,8 +2,8 @@
 
 const fs = require('fs');
 const bcoin = require('bcoin');
-const KeyRing = bcoin.keyring;
-const Script = bcoin.script;
+const KeyRing = bcoin.KeyRing;
+const Script = bcoin.Script;
 
 // Network is important when creating addresses
 // and storing private keys, You don't want to accidentally spend

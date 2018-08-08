@@ -3,11 +3,11 @@
 const fs = require('fs');
 const assert = require('assert');
 const bcoin = require('bcoin');
-const KeyRing = bcoin.keyring;
-const Script = bcoin.script;
-const MTX = bcoin.mtx;
-const Amount = bcoin.amount;
-const Coin = bcoin.coin;
+const KeyRing = bcoin.KeyRing;
+const Script = bcoin.Script;
+const MTX = bcoin.MTX;
+const Amount = bcoin.Amount;
+const Coin = bcoin.Coin;
 
 const network = 'regtest';
 

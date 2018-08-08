@@ -1,16 +1,17 @@
 'use strict';
 
-const bcoin = require('../bcoin');
-const {Client, Wallet} = bcoin.http;
-const Amount = bcoin.amount;
+const {Amount} = require('bcoin');
+const {WalletClient} = require('bclient');
 
 const network = 'regtest';
+const port = 48334; // regtest port
+
 const sendTo = 'RBg1TLaNuRpH6UTFzogFXhjqubPYZaqWgs';
 
 (async () => {
-  const client = new Client({ network });
-  const wallet1 = new Wallet({ id: 'cosigner1', network });
-  const wallet2 = new Wallet({ id: 'cosigner2', network });
+  const client = new WalletClient({ network, port });
+  const wallet1 = client.wallet('cosigner1');
+  const wallet2 = client.wallet('cosigner2');
 
   // Because we can't sign and spend from account
   // we can't use `spend` and publish directly to network.
